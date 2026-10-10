@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-## Date: 09/10/2026
+## Date: 09.10.2026
 
 ## AIM
 To develop a Django Application to store and retrieve data from a Vehicle Service Database platform using Object Relational Mapping(ORM).
@@ -48,20 +48,20 @@ class DeliveryPartner(models.Model):
     phoneno = models.IntegerField(primary_key=True)
     address = models.TextField()
     Rating_percentage = models.FloatField() 
+
 class DetailsAdmin(admin.ModelAdmin):
     list_display=["partner_id","Name","dob","Email_id","phoneno","address","Rating_percentage"]
-
-
 
 admin.py
 from django.contrib import admin
 from .models import DeliveryPartner,DetailsAdmin
 admin.site.register(DeliveryPartner,DetailsAdmin)
-
 ```
+
 ## OUTPUT
 ![alt text](image.png)
 
 
 ## RESULT
 Thus the program for creating Online Food Delivery Database using ORM hass been executed successfully
+GIT
